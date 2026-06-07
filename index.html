@@ -1,0 +1,614 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohit Solanki | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+    <!-- Floating Particles -->
+    <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-blur fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 lg:h-20">
+                <a href="#hero" class="text-xl font-bold gradient-text font-mono tracking-tight">RS.</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="nav-link text-sm text-gray-400 hover:text-white transition-colors">About</a>
+                    <a href="#skills" class="nav-link text-sm text-gray-400 hover:text-white transition-colors">Skills</a>
+                    <a href="#experience" class="nav-link text-sm text-gray-400 hover:text-white transition-colors">Experience</a>
+                    <a href="#projects" class="nav-link text-sm text-gray-400 hover:text-white transition-colors">Projects</a>
+                    <a href="#contact" class="btn-primary px-5 py-2 rounded-full text-sm font-medium text-white">Contact</a>
+                </div>
+                <button class="md:hidden text-gray-400 focus:outline-none" id="mobileMenuBtn" aria-label="Menu">
+                    <div class="space-y-1.5">
+                        <div class="hamburger-line w-6 h-0.5 bg-current" id="bar1"></div>
+                        <div class="hamburger-line w-6 h-0.5 bg-current" id="bar2"></div>
+                        <div class="hamburger-line w-4 h-0.5 bg-current" id="bar3"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t border-white/5">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#about" class="block text-sm text-gray-400 hover:text-white py-2" onclick="closeMobileMenu()">About</a>
+                <a href="#skills" class="block text-sm text-gray-400 hover:text-white py-2" onclick="closeMobileMenu()">Skills</a>
+                <a href="#experience" class="block text-sm text-gray-400 hover:text-white py-2" onclick="closeMobileMenu()">Experience</a>
+                <a href="#projects" class="block text-sm text-gray-400 hover:text-white py-2" onclick="closeMobileMenu()">Projects</a>
+                <a href="#contact" class="block text-sm text-white py-2" onclick="closeMobileMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-gradient relative min-h-screen flex items-center pt-20">
+        <!-- Floating Orbs -->
+        <div class="floating-orb w-72 h-72 bg-indigo-600 top-20 left-10" style="animation-delay: 0s;"></div>
+        <div class="floating-orb w-96 h-96 bg-purple-600 bottom-20 right-10" style="animation-delay: -3s;"></div>
+        <div class="floating-orb w-64 h-64 bg-pink-600 top-1/2 left-1/2" style="animation-delay: -5s;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/30 bg-indigo-500/10 mb-6 fade-in">
+                        <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                        <span class="text-sm text-indigo-300 font-medium">Available for opportunities</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-4 fade-in" style="transition-delay: 0.1s;">
+                        Hi, I'm <br>
+                        <span class="gradient-text">Rohit Solanki</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-400 mb-3 fade-in font-mono" style="transition-delay: 0.2s;">
+                        Full Stack Web Developer
+                    </p>
+                    <p class="text-base text-gray-500 mb-8 max-w-lg mx-auto lg:mx-0 fade-in leading-relaxed" style="transition-delay: 0.3s;">
+                        Building innovative, secure, and user-focused digital solutions with a passion for clean code and creative problem-solving.
+                    </p>
+                    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start fade-in" style="transition-delay: 0.4s;">
+                        <a href="#projects" class="btn-primary px-8 py-3.5 rounded-full text-white font-semibold flex items-center gap-2">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right text-sm"></i>
+                        </a>
+                        <a href="Rohit Solanki Resume.pdf" download="Rohit Solanki Resume.pdf" class="px-8 py-3.5 rounded-full border border-white/10 text-white font-semibold hover:border-indigo-500/50 hover:bg-white/5 transition-all flex items-center gap-2">
+                            <i class="fas fa-download text-sm"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                    <div class="flex items-center gap-4 mt-8 justify-center lg:justify-start fade-in" style="transition-delay: 0.5s;">
+                        <a href="https://github.com/rohitsolanki09" target="_blank" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:rohitsolanki9822@gmail.com" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+919137110752" class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-gray-400 hover:text-white hover:border-indigo-500/50 hover:bg-indigo-500/10 transition-all">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex-shrink-0 fade-in" style="transition-delay: 0.3s;">
+                    <div class="relative">
+                        <div class="profile-ring">
+                            <div class="w-56 h-56 sm:w-72 sm:h-72 rounded-full overflow-hidden bg-gray-900">
+                                <img src="images/pfp.jpg" alt="Rohit Solanki" class="w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -right-4 w-20 h-20 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/20 flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-code text-indigo-400 text-xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 w-20 h-20 rounded-2xl bg-gradient-to-br from-pink-500/20 to-purple-500/20 border border-pink-500/20 flex items-center justify-center backdrop-blur-sm">
+                            <i class="fas fa-shield-halved text-pink-400 text-xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
+            <a href="#about" class="flex flex-col items-center text-gray-500 hover:text-indigo-400 transition-colors">
+                <span class="text-xs mb-2 tracking-widest uppercase">Scroll</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-sm font-mono text-indigo-400 tracking-widest uppercase">Get to know me</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">Professional <span class="gradient-text">Summary</span></h2>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
+            </div>
+            <div class="max-w-4xl mx-auto">
+                <div class="card rounded-2xl p-8 lg:p-12 fade-in">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-user-tie text-white"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-1">About Me</h3>
+                            <p class="text-gray-500 text-sm font-mono">Full Stack Developer & Cybersecurity Enthusiast</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed text-lg">
+                        Motivated and detail-oriented Full Stack Web Developer currently pursuing a degree in Information Technology. Skilled in both front-end and back-end development, with strong experience in technologies like <span class="text-indigo-400 font-medium">PHP</span>, <span class="text-indigo-400 font-medium">JavaScript</span>, <span class="text-indigo-400 font-medium">Python</span>, and <span class="text-indigo-400 font-medium">React</span>. Eager to apply technical skills and creative problem-solving to build innovative, secure, and user-focused digital solutions. Also passionate about <span class="text-purple-400 font-medium">cybersecurity</span>, with hands-on experience in penetration testing using <span class="text-purple-400 font-medium">Kali Linux</span> and security tools like <span class="text-purple-400 font-medium">DVWA</span>.
+                    </p>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 mt-10">
+                        <div class="text-center">
+                            <div class="text-2xl font-black gradient-text">4+</div>
+                            <div class="text-xs text-gray-500 mt-1">Projects</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-black gradient-text">10+</div>
+                            <div class="text-xs text-gray-500 mt-1">Technologies</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-black gradient-text">2+</div>
+                            <div class="text-xs text-gray-500 mt-1">Years Experience</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-black gradient-text">100%</div>
+                            <div class="text-xs text-gray-500 mt-1">Dedication</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Card -->
+            <div class="max-w-4xl mx-auto mt-8 fade-in">
+                <div class="education-card rounded-2xl p-8 flex flex-col sm:flex-row items-center gap-6">
+                    <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                    </div>
+                    <div class="text-center sm:text-left">
+                        <h4 class="text-lg font-bold text-white">Bachelor of Engineering (B.E.) – Information Technology</h4>
+                        <p class="text-indigo-400 font-medium">Don Bosco Institute of Technology, Mumbai</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-sm font-mono text-indigo-400 tracking-widest uppercase">What I Know</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">My <span class="gradient-text">Skills</span></h2>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Programming Languages -->
+                <div class="card rounded-2xl p-6 fade-in" style="transition-delay: 0.0s;">
+                    <div class="w-12 h-12 rounded-xl tag-color-1 flex items-center justify-center mb-4 border">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Programming Languages</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-cyan-300">Python</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-cyan-300">JavaScript</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-cyan-300">PHP</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-cyan-300">Dart</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="card rounded-2xl p-6 fade-in" style="transition-delay: 0.1s;">
+                    <div class="w-12 h-12 rounded-xl tag-color-2 flex items-center justify-center mb-4 border">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Frontend / Mobile Dev</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-blue-300">React.js</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-blue-300">HTML5</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-blue-300">CSS3</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-blue-300">Tailwind CSS</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-blue-300">Flutter</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="card rounded-2xl p-6 fade-in" style="transition-delay: 0.2s;">
+                    <div class="w-12 h-12 rounded-xl tag-color-3 flex items-center justify-center mb-4 border">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Backend Development</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-purple-300">Node.js</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-purple-300">Express.js</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-purple-300">Django</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-purple-300">REST APIs</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-purple-300">Redis</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-purple-300">Kafka</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="card rounded-2xl p-6 fade-in" style="transition-delay: 0.3s;">
+                    <div class="w-12 h-12 rounded-xl tag-color-4 flex items-center justify-center mb-4 border">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Databases</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-pink-300">MySQL</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-pink-300">PostgreSQL</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-pink-300">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="card rounded-2xl p-6 fade-in lg:col-span-2" style="transition-delay: 0.4s;">
+                    <div class="w-12 h-12 rounded-xl tag-color-5 flex items-center justify-center mb-4 border">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">Tools & Platforms</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Git</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">GitHub</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">VS Code</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Docker</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Kubernetes</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">AWS</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Azure</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Google Cloud</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">WordPress</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Shopify</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Kali Linux</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Android Studio</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Replit</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">phpMyAdmin</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Advanced Excel</span>
+                        <span class="skill-tag px-3 py-1.5 rounded-lg text-xs font-medium text-green-300">Combell</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-sm font-mono text-indigo-400 tracking-widest uppercase">My Journey</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">Work <span class="gradient-text">Experience</span></h2>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="experience-card rounded-2xl p-8 lg:p-10 fade-in">
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-briefcase text-white text-lg"></i>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-white">Full Stack Development, Cloud & QA</h3>
+                            <p class="text-indigo-400 font-semibold">Webmaken</p>
+                        </div>
+                        <div class="px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20">
+                            <span class="text-xs font-mono text-indigo-300">Aug 2023 – Present</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-indigo-400 mt-2.5 flex-shrink-0"></div>
+                            <p class="text-gray-300 leading-relaxed">Developed and maintained responsive full-stack web applications using <span class="text-indigo-300 font-medium">PHP, JavaScript, Python, React, and Node.js</span> for multiple client projects.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-purple-400 mt-2.5 flex-shrink-0"></div>
+                            <p class="text-gray-300 leading-relaxed">Designed and integrated <span class="text-purple-300 font-medium">REST APIs</span>, authentication systems, and database-driven features using <span class="text-purple-300 font-medium">MySQL, MongoDB, and PostgreSQL</span>.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-pink-400 mt-2.5 flex-shrink-0"></div>
+                            <p class="text-gray-300 leading-relaxed">Conducted security testing and vulnerability assessments using <span class="text-pink-300 font-medium">Kali Linux and DVWA</span>, identifying and resolving potential security flaws.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 mt-2.5 flex-shrink-0"></div>
+                            <p class="text-gray-300 leading-relaxed">Deployed and managed web applications on cloud servers and hosting environments, including domain configuration and production monitoring.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-green-400 mt-2.5 flex-shrink-0"></div>
+                            <p class="text-gray-300 leading-relaxed">Collaborated with clients and cross-functional teams to translate business requirements into scalable technical solutions.</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2.5 flex-shrink-0"></div>
+                            <p class="text-gray-300 leading-relaxed">Improved application performance through <span class="text-amber-300 font-medium">code optimization, debugging, and database query enhancements</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-sm font-mono text-indigo-400 tracking-widest uppercase">My Work</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Project 1: Skill Swap -->
+                <div class="project-card rounded-2xl p-8 fade-in" style="transition-delay: 0.0s;">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                            <i class="fas fa-exchange-alt text-white text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-xs font-mono text-gray-500">B2B Platform</span>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-medium tag-color-1 border">Featured</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Skill Swap Network</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Barter-Based Web-application Platform</p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-indigo-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Designed a barter-based platform enabling businesses and professionals to exchange services without monetary transactions</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-indigo-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Built backend with <span class="text-indigo-300">Node.js & MongoDB</span>, developing REST APIs for users, skills, and transaction history</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-indigo-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Implemented AI-based matchmaking logic, rating systems, skill wallet tracking, and digital trade agreements</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-indigo-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Developed cross-platform mobile interface using <span class="text-indigo-300">React Native</span></p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">Node.js</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-green-500/10 text-green-300 border border-green-500/20">MongoDB</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">React Native</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-500/10 text-purple-300 border border-purple-500/20">AI/ML</span>
+                    </div>
+                </div>
+
+                <!-- Project 2: RM Group -->
+                <div class="project-card rounded-2xl p-8 fade-in" style="transition-delay: 0.1s;">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-white text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-xs font-mono text-gray-500">E-Commerce</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">RM Group</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Dynamic E-Commerce Web Application</p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Full-stack e-commerce platform using <span class="text-purple-300">PHP & MySQL</span> for dynamic product management and real-time purchasing</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Admin Panel & Dashboard for managing products, tracking orders, and monitoring sales analytics</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Secure authentication with multi-user login and email verification using third-party APIs</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-purple-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Responsive frontend with product browsing, order placement, and purchase history tracking</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-purple-500/10 text-purple-300 border border-purple-500/20">PHP</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-500/10 text-blue-300 border border-blue-500/20">MySQL</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-orange-500/10 text-orange-300 border border-orange-500/20">HTML/CSS</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-green-500/10 text-green-300 border border-green-500/20">JS</span>
+                    </div>
+                </div>
+
+                <!-- Project 3: Mines -->
+                <div class="project-card rounded-2xl p-8 fade-in" style="transition-delay: 0.2s;">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center">
+                            <i class="fas fa-mobile-alt text-white text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-xs font-mono text-gray-500">Mobile App</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Mines</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Client Mobile Application</p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Cross-platform mobile application using <span class="text-green-300">Flutter & Dart</span> for real-time data from multiple external sources</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Integrated REST APIs to dynamically retrieve, process, and present updated information</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Responsive UI with optimized caching and refresh mechanisms for improved performance</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-green-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Production-ready app with stability ensured through testing, debugging, and performance tuning</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-green-500/10 text-green-300 border border-green-500/20">Flutter</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Dart</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">REST API</span>
+                    </div>
+                </div>
+
+                <!-- Project 4: WhatsApp Automation -->
+                <div class="project-card rounded-2xl p-8 fade-in" style="transition-delay: 0.3s;">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center">
+                            <i class="fab fa-whatsapp text-white text-sm"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-xs font-mono text-gray-500">Automation</span>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">WhatsApp Message Automation</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-5">Python Automation Tool</p>
+                    
+                    <div class="space-y-3 mb-6">
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-amber-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Python automation tool to schedule and send WhatsApp messages using <span class="text-amber-300">PyWhatKit</span> library</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-amber-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">CSV-based contact management using <span class="text-amber-300">Pandas</span> for automated message scheduling</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-amber-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Conditional logic for text/media messages with error handling and delay control</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fas fa-check-circle text-amber-400 text-xs mt-1"></i>
+                            <p class="text-gray-300 text-sm">Supports bulk messaging for reminders, notifications, and marketing communication</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-amber-500/10 text-amber-300 border border-amber-500/20">Python</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-blue-500/10 text-blue-300 border border-blue-500/20">Pandas</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-green-500/10 text-green-300 border border-green-500/20">PyWhatKit</span>
+                        <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">CSV</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 lg:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-sm font-mono text-indigo-400 tracking-widest uppercase">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black mt-3 mb-4">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="section-divider w-24 mx-auto mt-6"></div>
+                <p class="text-gray-400 mt-6 max-w-xl mx-auto">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+                <a href="mailto:rohitsolanki9822@gmail.com" class="contact-link card rounded-2xl p-6 text-center group fade-in" style="transition-delay: 0.0s;">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-indigo-500/20 to-purple-500/20 border border-indigo-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-envelope text-indigo-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">Email</h4>
+                    <p class="text-gray-500 text-xs break-all">rohitsolanki9822@gmail.com</p>
+                </a>
+
+                <a href="tel:+919137110752" class="contact-link card rounded-2xl p-6 text-center group fade-in" style="transition-delay: 0.1s;">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-green-500/20 to-teal-500/20 border border-green-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-phone text-green-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">Phone</h4>
+                    <p class="text-gray-500 text-xs">+91 9137110752</p>
+                </a>
+
+                <a href="https://github.com/rohitsolanki09" target="_blank" class="contact-link card rounded-2xl p-6 text-center group fade-in" style="transition-delay: 0.2s;">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-gray-500/20 to-gray-400/20 border border-gray-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fab fa-github text-gray-300 text-xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">GitHub</h4>
+                    <p class="text-gray-500 text-xs">@rohitsolanki09</p>
+                </a>
+
+                <div class="contact-link card rounded-2xl p-6 text-center group fade-in" style="transition-delay: 0.3s;">
+                    <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-pink-500/20 to-rose-500/20 border border-pink-500/20 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                        <i class="fas fa-map-marker-alt text-pink-400 text-xl"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-1">Location</h4>
+                    <p class="text-gray-500 text-xs">Mumbai, India</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="max-w-2xl mx-auto mt-16 fade-in">
+                <div class="card rounded-2xl p-8 lg:p-10">
+                    <h3 class="text-xl font-bold text-white mb-6 text-center">Send a Message</h3>
+                    <form id="contactForm" class="space-y-5">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">Name</label>
+                                <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-400 mb-2">Email</label>
+                                <input type="email" placeholder="your@email.com" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+                            <input type="text" placeholder="Project Discussion" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-400 mb-2">Message</label>
+                            <textarea rows="5" placeholder="Tell me about your project..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full py-3.5 rounded-xl text-white font-semibold text-sm">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <span class="text-lg font-bold gradient-text font-mono">RS.</span>
+                    <span class="text-gray-600 text-sm">© 2024 Rohit Solanki. All rights reserved.</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="https://github.com/rohitsolanki09" target="_blank" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-500 hover:text-white hover:border-indigo-500/50 transition-all">
+                        <i class="fab fa-github text-sm"></i>
+                    </a>
+                    <a href="mailto:rohitsolanki9822@gmail.com" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-500 hover:text-white hover:border-indigo-500/50 transition-all">
+                        <i class="fas fa-envelope text-sm"></i>
+                    </a>
+                    <a href="tel:+919137110752" class="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-gray-500 hover:text-white hover:border-indigo-500/50 transition-all">
+                        <i class="fas fa-phone text-sm"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-indigo-600/80 backdrop-blur-sm border border-indigo-500/30 text-white flex items-center justify-center shadow-lg shadow-indigo-500/20 opacity-0 pointer-events-none transition-all duration-300 hover:bg-indigo-500 z-50">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
